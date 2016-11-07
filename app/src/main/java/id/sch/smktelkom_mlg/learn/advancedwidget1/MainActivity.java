@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
     private void doProses(LinearLayout llMain) {
         String hasil = "";
         for (int i = 0; i < 5; i++) {
-            EditText etNama = (EditText) llMain.getChildAt(0);
-            EditText etUmur = (EditText) llMain.getChildAt(1);
+            EditText etNama = (EditText) llMain.getChildAt(i * 2);
+            EditText etUmur = (EditText) llMain.getChildAt((1 * 2) + 1);
 
             String nama = etNama.getText().toString();
             String umur = etUmur.getText().toString();
